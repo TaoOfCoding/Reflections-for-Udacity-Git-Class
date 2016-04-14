@@ -1,0 +1,7 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: A new hidden folder .git that contains the metadata of the repository will be created.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A: Staging area is a buffer zone between working directory and the repository. 
