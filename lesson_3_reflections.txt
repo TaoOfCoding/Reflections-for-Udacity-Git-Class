@@ -9,3 +9,6 @@ A: Clones are mainly used to download repositories from Github to local computer
 
 Q: What is the benefit of having a copy of the last known state of the remote stored locally?
 A: So we can access it locally.
+
+Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+A: I may have to resort to phone call or pair-programming without Github, and that will be a pain!
