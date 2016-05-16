@@ -2,10 +2,36 @@ Q: What happens when you initialize a repository? Why do you need to do it?
 
 A: A new hidden folder .git that contains the metadata of the repository will be created.
 
-Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+Q: How is the staging area different from the working directory and the repository? What value do you think it offer?
 
-A: Staging area is a buffer zone between working directory and the repository. 
+A: Staging area is a buffer zone between working directory and the repository.
 
 Q: How can you use the staging area to make sure you have one commit per logical change?
 
 A: We can use git diff --staged to check how many changes we have made in staging area compared to the most recent commit.
+
+Q: What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+A: When we want to keep two versions of the same program, branch allows us to
+switch between different versions.
+
+When we want to experiment some changes without changing the original program,
+branch gives us a safe playground to try out new changes with the assurance that
+whenever we want to go back, the original version stays unchanged in another
+branch. When we think the new change is working, we can then merge it with the
+master branch to make the change in effect!
+
+Q: How do the diagrams help you visualize the branch structure?
+A: Diagram is a great aid in terms of the reachability problem. We can easily see which nodes are reachable and which are not. The danger of unreachable commit and meaning of detached head also become clear with the aid of diagram.
+
+Q: What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+
+A: We will combine the changes that have been made since the two branches are
+created. The reason why we have the merged node pointing to both of the nodes
+from which it is merged is because both of them are the new node's parent.
+
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A: The biggest pro is that Git's automatic merging can help us merge changes that don't conflict with each other on its own and saves a lot of time. However, it can sometimes do what we don't want. For example, when a new line of code is added in one branch, even though we may not want it in the merged one, it will be added automatically. However, such flaws are negligible compared to the time the automation saved us.
