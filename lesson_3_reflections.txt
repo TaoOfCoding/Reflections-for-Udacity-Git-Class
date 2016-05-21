@@ -12,3 +12,6 @@ A: So we can access it locally.
 
 Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 A: I may have to resort to phone call or pair-programming without Github, and that will be a pain!
+
+Q: When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+A: When my change might break the codes in master. Experimenting with the changes in branch will help us keep a working master branch all the time.
